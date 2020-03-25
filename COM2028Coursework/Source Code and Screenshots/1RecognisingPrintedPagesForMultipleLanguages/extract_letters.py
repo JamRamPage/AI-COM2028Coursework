@@ -4,6 +4,7 @@
 # Keep in mind that after you extract each letter, you have to normalise the size.
 # You can do that by using scipy.imresize. It is a good idea to train your classifiers
 # using a constast size (for example 20x20 pixels) 
+
 import numpy as np
 import matplotlib.pyplot as plt
 import matplotlib.patches as mpatches
@@ -12,8 +13,7 @@ from skimage.segmentation import clear_border
 from skimage.morphology import label
 from skimage.measure import regionprops
 
-
-image = imread('./training_set_english.PNG',1)
+image = imread('training_set_english.PNG',1)
 
 #apply threshold in order to make the image binary
 bw = image < 120
@@ -45,3 +45,4 @@ for region in regionprops(label_image):
         ax.add_patch(rect)
 
 plt.show()
+input()
