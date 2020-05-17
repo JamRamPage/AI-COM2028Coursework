@@ -1,0 +1,481 @@
+Delivered-To: someone@example.com
+Received: by 2002:a6b:8ec2:0:0:0:0:0 with SMTP id q185csp600704iod;
+        Wed, 8 Apr 2020 05:05:39 -0700 (PDT)
+X-Google-Smtp-Source: APiQypIPPPtMv2UdZ6YHrRy5H5aM5zdG4B6R4KZEy230dYs5r2TBJ3zvvYAglakT8X57Aks633d7
+X-Received: by 2002:a05:6402:b56:: with SMTP id bx22mr5678972edb.252.1586347539458;
+        Wed, 08 Apr 2020 05:05:39 -0700 (PDT)
+ARC-Seal: i=1; a=rsa-sha256; t=1586347539; cv=none;
+        d=google.com; s=arc-20160816;
+        b=wv7g7kuOzvKGfjSS5Uggx3RR8EXGmYwyB2CPN2VG+4tSCj/kg33wI/Pe4PJ2FSONg8
+         a6R/222cSJpiYUX7Wn64UYV3NqI+WX2RZapRoHvXGVggqs1nBjdZC/e30FP48ldntMQN
+         ioqomqzt7ZwGzYfQSG4nYc3s6ZMyzHL8pXiI2hgMk4BaLS6Hx/zaR2Dfvxbfhody7n/T
+         jsCXPNl3yRPc6X8k+5Kv/b7QjOCLVmQo7lLV3V/UgfIVn95bizYnC+gb3Sirz0Zfceds
+         /2urKZIN5HqawiURDlZOtTabOtzOUG7hxCtdae4o3YCxEgILjy3eDqUe/HBw0mCzzbyR
+         Db6w==
+ARC-Message-Signature: i=1; a=rsa-sha256; c=relaxed/relaxed; d=google.com; s=arc-20160816;
+        h=message-id:date:to:list-unsubscribe:reply-to:from
+         :content-transfer-encoding:mime-version:subject:dkim-signature;
+        bh=l0OMcy/ViSymkxje1GfYf/5w1dl9SWWJNwVia9tMSQ4=;
+        b=a13ZA4hO5bZyz3Izdk6P5x6S5Z4yKLNE9selqncMUxtyMBGfKas5yQq3ZM5aIh5v1z
+         hnXYAkHuUjBW0Eu8wlCJIl+v08G6ZPL4ZBhfG9WxqHXqaKLpXybVQ9uay0Hv3GcplXjP
+         PataqivW1DSDUVI3R7xv5i0DQBkkGnwBfC0cek4pwHU2CzTdsE3Tc26wm2WmSyraVeu9
+         rHtY6pIgUvJqEYbpL9IOcWJf7nyqCE0cKD+Wok8V20LGHeN0umUULfY8+vRBIh3Qk9kz
+         4W4+4GXTbCSvIl2ogXNRrkKhLLYzOyqFFnExdc+gmA+3NcnyKRh3L010g91yGnBZvUoX
+         kQXA==
+ARC-Authentication-Results: i=1; mx.google.com;
+       dkim=pass header.i=@email-diginbox.com header.s=pureresponse header.b=QHHpBS2T;
+       spf=pass (google.com: domain of agent@email-diginbox.com designates 83.138.172.16 as permitted sender) smtp.mailfrom=agent@email-diginbox.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=email-diginbox.com
+Return-Path: <agent@email-diginbox.com>
+Received: from mta17216.pur3.net (mta17216.pur3.net. [83.138.172.16])
+        by mx.google.com with ESMTPS id y11si3721162edp.155.2020.04.08.05.05.39
+        for <someone@example.com>
+        (version=TLS1_2 cipher=ECDHE-ECDSA-AES128-GCM-SHA256 bits=128/128);
+        Wed, 08 Apr 2020 05:05:39 -0700 (PDT)
+Received-SPF: pass (google.com: domain of agent@email-diginbox.com designates 83.138.172.16 as permitted sender) client-ip=83.138.172.16;
+Authentication-Results: mx.google.com;
+       dkim=pass header.i=@email-diginbox.com header.s=pureresponse header.b=QHHpBS2T;
+       spf=pass (google.com: domain of agent@email-diginbox.com designates 83.138.172.16 as permitted sender) smtp.mailfrom=agent@email-diginbox.com;
+       dmarc=pass (p=NONE sp=NONE dis=NONE) header.from=email-diginbox.com
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; s=pureresponse; d=email-diginbox.com;
+ h=Subject:MIME-Version:Content-Type:Content-Transfer-Encoding:From:Reply-To:List-Unsubscribe:To:Date:Message-ID; i=info@email-diginbox.com;
+ bh=l0OMcy/ViSymkxje1GfYf/5w1dl9SWWJNwVia9tMSQ4=;
+ b=QHHpBS2TkwcOBjmsBG1jCOw21Lu1y70cPJtEwiEh29oM5XYYcGrhBuKMRBt6CDjJPw4wVTz/lt6F
+   NlZMxMFDW5XkOThSSTNaYRfv2xxDdeNS0qgJPMCW4KbZdijrgt6ZDS02ZQzx5hQSbFSM6sO92PgX
+   4whi/OLfZ72E/B2SrlQ=
+Subject: Dig-In Students! Bring Barry's Bootcamp to your bedroom
+MIME-Version: 1.0
+Content-Type: multipart/alternative; boundary="alternative_42634d2fbccfeee4443d8b5334f8ae9a"
+Content-Transfer-Encoding: 7bit
+From: "Dig-In Box" <info@email-diginbox.com>
+Reply-To: "Dig-In Box" <info@email-diginbox.com>
+X-MailId: {~A93970495598347423675146676513624~}
+X-P360-P-ID: 397049559
+X-P360-I-ID: 14667
+X-P360-DR-ID: 34742367
+List-Unsubscribe: <http://email-diginbox.com/_act/optout.php?A93970495598347423675146676513624&mode=listOptOutHeader>, <mailto:list-unsubscribe@email-diginbox.com?body={~A93970495598347423675146676513624~}>
+To: someone@example.com
+Date: Wed, 08 Apr 2020 12:56:37 +0100
+Message-ID: <0.0.0.0.1D60D9CC221B454.0@pmta1.Z3GPPYOZ9GU2HQ>
+
+
+
+
+--alternative_42634d2fbccfeee4443d8b5334f8ae9a
+Content-Type: text/plain; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+DigInBox Logo ( https://www.diginbox.com/?utm_campaign=3DWorld Health Day -=
+ Barry's Bootcamp&utm_source=3DemailCampaign&utm_content=3D{~mailVariationI=
+d~}&utm_medium=3Demail )=0A=0A-------------------=0AHi James,=0A-----------=
+--------=0A=0ATo mark World Health Day this week we are asking Dig-In stude=
+nts=0Ato get active at home with a little help from our friends at=0ABarry'=
+s Bootcamp.=0A=0AEvery day they are streaming amazing live workouts you can=
+ do=0Astraight from your living room.=0A=0AHere's what they've got on today=
+...=0A=0ABarrys ( https://www.instagram.com/barrysuk/?hl=3Den&utm_campaign=
+=3DWorld Health Day - Barry's Bootcamp&utm_source=3DemailCampaign&utm_conte=
+nt=3D{~mailVariationId~}&utm_medium=3Demail )=0A=0AMake sure you follow the=
+ir Instagram page so you can=0Akeep up-to-date with their daily workout sch=
+edules and stay=0Aactive at home.=0A=0AWORKOUT WITH BARRY'S BOOTCAMP ( http=
+s://www.instagram.com/barrysuk/?hl=3Den&utm_campaign=3DWorld Health Day - B=
+arry's Bootcamp&utm_source=3DemailCampaign&utm_content=3D{~mailVariationId~=
+}&utm_medium=3Demail )=0A=0AAs always, take care of yourselves and of each =
+other!=0A=0ADig-In=0A=0A*****************************=0ADownload the Dig-in=
+ App here:=0A*****************************=0A=0AApp Store Play Store ( http=
+s://apps.apple.com/us/app/dig-in-student-rewards/id1476266192?utm_campaign=
+=3DWorld Health Day - Barry's Bootcamp&utm_source=3DemailCampaign&utm_conte=
+nt=3D{~mailVariationId~}&utm_medium=3Demail )=0A=0AContact ( info@diginbox.=
+com ) | Terms & Conditions ( https://www.diginbox.com/privacy?utm_campaign=
+=3DWorld Health Day - Barry's Bootcamp&utm_source=3DemailCampaign&utm_conte=
+nt=3D{~mailVariationId~}&utm_medium=3Demail ) | Unsubscribe ( http://email-=
+diginbox.com/_act/optout.php?A93970495598347423675146676513624 )=0A=0AGet i=
+n touch anytime at info@diginbox.com just reply to this=0Aemail!=0A=0AYou'r=
+e receiving this email because you entered a Dig-In=0Agiveaway.=0AIf you'd =
+rather not hear from us again, simply click here ( http://email-diginbox.co=
+m/_act/optout.php?A93970495598347423675146676513624 ) or use the=0Aunsubscr=
+ibe link above.=0A=0ADigInBox Logo ( https://www.diginbox.com/?utm_campaign=
+=3DWorld Health Day - Barry's Bootcamp&utm_source=3DemailCampaign&utm_conte=
+nt=3D{~mailVariationId~}&utm_medium=3Demail )=0A=0A=C2=A9 Dig-In 2019=0ADig=
+-In, 37 Cremer Street, London, E2 8HD=0Awww.diginbox.com=0A=0A=0A--=0A=0ATo=
+ unsubscribe, visit: http://email-diginbox.com/_act/get_rcr.php?A9397049559=
+8347423675146676513624=0A=0A=0A=0A=0A=0A=0A{~A93970495598347423675146676513=
+624~}
+
+--alternative_42634d2fbccfeee4443d8b5334f8ae9a
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+<!DOCTYPE html>=0A<html>=0A<head>=0A<meta content=3D"text/html; charset=3Du=
+tf-8" http-equiv=3D"Content-Type">=0A<meta content=3D"width=3Ddevice-width,=
+ initial-scale=3D1.0" name=3D"viewport">=0A<meta content=3D"IE=3Dedge" http=
+-equiv=3D"X-UA-Compatible">=0A<meta name=3D"editor" content=3D"DRAGANDDROP"=
+>=0A<meta name=3D"version" content=3D"2.0.1">=0A=0A=0A=0A=0A<style type=3D"=
+text/css">=0A@media only screen and (max-width: 480px) {=0A  .block-panel-g=
+rid .block-column-padding {=0A    display: block !important; width: 100% !i=
+mportant;=0A  }=0A  .block-column-padding {=0A    display: none !important;=
+=0A  }=0A  .block-content-preview-text {=0A    display: block;=0A  }=0A}=0A=
+@media only screen and (max-width: 600px) {=0A  .block-content-social td {=
+=0A    line-height: 50px !important;=0A  }=0A  .block-content-social-placeh=
+older td {=0A    line-height: 50px !important;=0A  }=0A  .block-content-soc=
+ial td a img {=0A    width: 40px !important; height: 40px !important;=0A  }=
+=0A  .block-content-social-placeholder td a img {=0A    width: 40px !import=
+ant; height: 40px !important;=0A  }=0A}=0Abody {=0Awidth: 100% !important; =
+-webkit-text-size-adjust: none; -ms-text-size-adjust: 100%; margin: 0px; pa=
+dding: 0px;=0A}=0Aimg {=0Aoutline: none; text-decoration: none; border: non=
+e;=0A}=0Abody {=0Abackground: #1C2533 none;=0A}=0A@media screen and (max-wi=
+dth: 600px) {=0A  .container {=0A    width: 100% !important;=0A  }=0A  .con=
+tainer-padding {=0A    width: 100% !important;=0A  }=0A  .block-column-colu=
+mn {=0A    width: 100% !important; box-sizing: border-box; display: block;=
+=0A  }=0A  .block-column-column img {=0A    max-width: 100% !important; wid=
+th: auto !important; height: auto !important;=0A  }=0A  .hide {=0A    displ=
+ay: none !important;=0A  }=0A}=0A</style>=0A</head>=0A<body style=3D"-ms-te=
+xt-size-adjust: 100%; -webkit-text-size-adjust: none; background: #1C2533 n=
+one; margin: 0px; padding: 0px; width: 100% !important" bgcolor=3D"#1C2533"=
+><!--[if !mso ]><!-- --><div style=3D"mso-hide:all; display:none !important=
+; font-size:1px;height: 0px; line-height:1px; margin: 0; max-height:0px; ma=
+x-width:0px;opacity:0; overflow: hidden; padding: 0; visibility:hidden; wid=
+th: 0px;"> Hi James, To mark World Health Day this week we are asking Dig-I=
+n students to get active at home with a little help from our friends at Bar=
+ry's Bootcamp. Every day they are streaming amazing live workouts you can d=
+o straight from your living room. Here's what they've got on today... Make =
+s  </div><![endif]--><a href=3D"http://response.pure360.com/_act/link.php?m=
+Id=3DA93970495598347423675146676513624&tId=3D-1"><!-- --></a>=0A=0A<table b=
+order=3D"0" cellpadding=3D"0" cellspacing=3D"0" data-block-background=3D"ba=
+ckground" class=3D"block-background block-background-background" id=3D"spac=
+e" style=3D"background: #1C2533 none; line-height: 100%; margin: 0px; mso-t=
+able-lspace: 0px; mso-table-rspace: 0px; padding: 0px; width: 100%" bgcolor=
+=3D"#1C2533" background=3D"none"> <tbody>=0A<tr data-block-panel=3D"full-wi=
+dth" class=3D"block-panel block-panel-full-width" id=3D"block-522180">=0A  =
+<td style=3D"background: #FE794E none repeat center; border: 0px none #0000=
+00; border-collapse: separate; padding: 10px 0px" bgcolor=3D"#FE794E">=0A  =
+  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" =
+class=3D"container" width=3D"600" style=3D"margin: 0px auto; mso-table-lspa=
+ce: 0px; mso-table-rspace: 0px; width: 600px">=0A      <tbody>=0A        <t=
+r>=0A          <td style=3D"border-collapse: separate; padding: 0px">=0A   =
+         <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"c=
+enter" width=3D"100%" style=3D"margin: 0px auto; mso-table-lspace: 0px; mso=
+-table-rspace: 0px">=0A              <tbody data-block-body=3D"">=0A=0A    =
+          <tr data-block-row=3D"row" class=3D"block-row block-row-row" id=
+=3D"block-585885">=0A  <td class=3D"container-padding" valign=3D"top" align=
+=3D"center" width=3D"600" style=3D"border: 0px none #000000; border-bottom-=
+left-radius: 0px; border-bottom-right-radius: 0px; border-collapse: separat=
+e; border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px"=
+>=0A    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"10=
+0%" style=3D"margin: 0px auto; mso-table-lspace: 0px; mso-table-rspace: 0px=
+">=0A      <tbody>=0A<tr><th valign=3D"top" data-block-column=3D"column" cl=
+ass=3D"block-column block-column-column" id=3D"block-721524" width=3D"564" =
+style=3D"border: 0px none #000000; border-bottom-left-radius: 0px; border-b=
+ottom-right-radius: 0px; border-top-left-radius: 0px; border-top-right-radi=
+us: 0px; font-weight: normal; padding: 18px; vertical-align: top">=0A  <tab=
+le cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D=
+"center" style=3D"margin: 0px auto; mso-table-lspace: 0px; mso-table-rspace=
+: 0px">=0A    <tbody><tr data-block-content=3D"image" class=3D"block-conten=
+t block-content-image" id=3D"block-585307">=0A  <td valign=3D"top" style=3D=
+"border: 0px none #000000; border-bottom-left-radius: 0px; border-bottom-ri=
+ght-radius: 0px; border-collapse: separate; border-top-left-radius: 0px; bo=
+rder-top-right-radius: 0px; padding: 0px; text-align: center" align=3D"cent=
+er">=0A    <a href=3D"http://email-diginbox.com/_act/link.php?mId=3DA939704=
+95598347423675146676513624&tId=3D109353621" target=3D"_blank" style=3D"back=
+ground: none; border: none; color: #FE794E; display: block; font-style: nor=
+mal; font-weight: normal; outline: none; text-decoration: none; word-wrap: =
+break-word"><img src=3D"https://cdn.uploadlibrary.com/DigInBox/logo-digin-e=
+mail41-990000014501453c.png" align=3D"center" draggable=3D"false" data-from=
+-url=3D"true" width=3D"110" alt=3D"DigInBox Logo" style=3D"border: none; ou=
+tline: none; text-decoration: none"></a>=0A  </td>=0A</tr></tbody>=0A  </ta=
+ble>=0A</th></tr>=0A    </tbody>=0A</table>=0A  </td>=0A</tr>=0A</tbody>=0A=
+            </table>=0A          </td>=0A        </tr>=0A      </tbody>=0A =
+   </table>=0A  </td>=0A</tr>=0A<tr data-block-panel=3D"clear" class=3D"blo=
+ck-panel block-panel-clear" id=3D"block-283084">=0A  <td style=3D"border-co=
+llapse: separate; padding: 0px">=0A    <table cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" align=3D"center" class=3D"container" width=3D"550" styl=
+e=3D"margin: 0px auto; mso-table-lspace: 0px; mso-table-rspace: 0px; width:=
+ 600px">=0A      <tbody>=0A        <tr>=0A          <td style=3D"border: 0p=
+x none #000000; border-collapse: separate; padding: 25px 25px 10px">=0A    =
+        <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"ce=
+nter" width=3D"100%" style=3D"margin: 0px auto; mso-table-lspace: 0px; mso-=
+table-rspace: 0px">=0A              <tbody data-block-body=3D"">=0A=0A     =
+         <tr data-block-row=3D"row" class=3D"block-row block-row-row" id=3D=
+"block-866218">=0A  <td class=3D"container-padding" valign=3D"top" align=3D=
+"center" width=3D"550" style=3D"border: 0px none #000000; border-bottom-lef=
+t-radius: 0px; border-bottom-right-radius: 0px; border-collapse: separate; =
+border-top-left-radius: 0px; border-top-right-radius: 0px; padding: 0px">=
+=0A    <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100=
+%" style=3D"margin: 0px auto; mso-table-lspace: 0px; mso-table-rspace: 0px"=
+>=0A      <tbody>=0A<tr><th valign=3D"top" data-block-column=3D"column" cla=
+ss=3D"block-column block-column-column" id=3D"block-481749" width=3D"550" s=
+tyle=3D"border: 0px none #000000; border-bottom-left-radius: 0px; border-bo=
+ttom-right-radius: 0px; border-top-left-radius: 0px; border-top-right-radiu=
+s: 0px; font-weight: normal; padding: 0px; vertical-align: top">=0A  <table=
+ cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=3D"100%" align=3D"c=
+enter" style=3D"margin: 0px auto; mso-table-lspace: 0px; mso-table-rspace: =
+0px">=0A    <tbody>=0A<tr data-block-content=3D"text" class=3D"block-conten=
+t block-content-text" id=3D"block-691255">=0A  <td valign=3D"top" style=3D"=
+border: 0px none #000000; border-bottom-left-radius: 0px; border-bottom-rig=
+ht-radius: 0px; border-collapse: separate; border-top-left-radius: 0px; bor=
+der-top-right-radius: 0px; color: #ffffff; font-family: Arial, Helvetica, s=
+ans-serif; font-size: 18px; font-style: normal; font-weight: normal; line-h=
+eight: 150%; padding: 0px 0px 10px; text-align: center; text-decoration: no=
+ne" align=3D"center"><h2 style=3D"color: #FE794E; font-family: Arial, Helve=
+tica, sans-serif; font-size: 26px; font-style: normal; font-weight: bold; l=
+ine-height: normal; margin: 0px 0px 10px; text-decoration: none">Hi James,=
+=C2=A0</h2></td>=0A</tr>=0A<tr data-block-content=3D"text" class=3D"block-c=
+ontent block-content-text" id=3D"block-744458">=0A  <td valign=3D"top" styl=
+e=3D"border: 0px none #000000; border-bottom-left-radius: 0px; border-botto=
+m-right-radius: 0px; border-collapse: separate; border-top-left-radius: 0px=
+; border-top-right-radius: 0px; color: #ffffff; font-family: Arial, Helveti=
+ca, sans-serif; font-size: 18px; font-style: normal; font-weight: normal; l=
+ine-height: 150%; padding: 0px 0px 15px; text-align: center; text-decoratio=
+n: none" align=3D"center">=0A<p style=3D"color: #ffffff; font-family: Arial=
+, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: =
+normal; line-height: 150%; margin: 0px; padding: 0px; text-align: center; t=
+ext-decoration: none" align=3D"center">To mark World Health Day this week w=
+e are asking Dig-In students to get active at home with a little help from =
+our friends at Barry's Bootcamp.</p>=0A<p style=3D"color: #ffffff; font-fam=
+ily: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; fon=
+t-weight: normal; line-height: 150%; margin: 0px; padding: 0px; text-align:=
+ center; text-decoration: none" align=3D"center"><br></p>=0A<p style=3D"col=
+or: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; fo=
+nt-style: normal; font-weight: normal; line-height: 150%; margin: 0px; padd=
+ing: 0px; text-align: center; text-decoration: none" align=3D"center">Every=
+ day they are streaming amazing=C2=A0live workouts you can do straight from=
+ your living room.</p>=0A<p style=3D"color: #ffffff; font-family: Arial, He=
+lvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: norm=
+al; line-height: 150%; margin: 0px; padding: 0px; text-align: center; text-=
+decoration: none" align=3D"center"><br></p>=0A<p style=3D"color: #ffffff; f=
+ont-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: norm=
+al; font-weight: normal; line-height: 150%; margin: 0px; padding: 0px; text=
+-align: center; text-decoration: none" align=3D"center">Here's what they've=
+ got on=C2=A0today...</p>=0A</td>=0A</tr>=0A<tr data-block-content=3D"image=
+" class=3D"block-content block-content-image" id=3D"block-421664">=0A  <td =
+valign=3D"top" style=3D"border: 0px none #000000; border-bottom-left-radius=
+: 0px; border-bottom-right-radius: 0px; border-collapse: separate; border-t=
+op-left-radius: 0px; border-top-right-radius: 0px; padding: 0px 0px 20px; t=
+ext-align: center" align=3D"center">=0A    <a href=3D"http://email-diginbox=
+.com/_act/link.php?mId=3DA93970495598347423675146676513624&tId=3D109353624=
+" target=3D"_blank" style=3D"background: none; border: none; color: #FE794E=
+; display: block; font-style: normal; font-weight: normal; outline: none; t=
+ext-decoration: none; word-wrap: break-word"><img src=3D"https://cdn.upload=
+library.com/DigInBox/barrys%202-1586263145432.jpg" align=3D"center" draggab=
+le=3D"false" data-parent=3D"" data-name=3D"barrys 2-1586263145432.jpg" widt=
+h=3D"550" alt=3D"Barrys" style=3D"border: none; outline: none; text-decorat=
+ion: none"></a>=0A  </td>=0A</tr>=0A<tr data-block-content=3D"text" class=
+=3D"block-content block-content-text" id=3D"block-796101">=0A  <td valign=
+=3D"top" style=3D"border: 0px none #000000; border-bottom-left-radius: 0px;=
+ border-bottom-right-radius: 0px; border-collapse: separate; border-top-lef=
+t-radius: 0px; border-top-right-radius: 0px; color: #ffffff; font-family: A=
+rial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weig=
+ht: normal; line-height: 150%; padding: 0px 0px 10px; text-align: center; t=
+ext-decoration: none" align=3D"center">=0A<p style=3D"color: #ffffff; font-=
+family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; =
+font-weight: normal; line-height: 150%; margin: 0px; padding: 0px; text-ali=
+gn: center; text-decoration: none" align=3D"center"><br></p>=0A<p style=3D"=
+color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px;=
+ font-style: normal; font-weight: normal; line-height: 150%; margin: 0px; p=
+adding: 0px; text-align: center; text-decoration: none" align=3D"center">Ma=
+ke sure you follow their Instagram page so you can keep=C2=A0up-to-date wit=
+h their daily workout schedules and stay active at home.</p>=0A<p style=3D"=
+color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px;=
+ font-style: normal; font-weight: normal; line-height: 150%; margin: 0px; p=
+adding: 0px; text-align: center; text-decoration: none" align=3D"center"><b=
+r></p>=0A</td>=0A</tr>=0A<tr data-block-content=3D"button" class=3D"block-c=
+ontent block-content-button" id=3D"block-431829">=0A  <td valign=3D"top" st=
+yle=3D"border-collapse: separate; padding: 0px">=0A    <table align=3D"cent=
+er" border=3D"0" cellpadding=3D"0" cellspacing=3D"0" width=3D"100%" style=
+=3D"margin: 0px auto; mso-table-lspace: 0px; mso-table-rspace: 0px">=0A    =
+  <tbody>=0A<tr>=0A        <td align=3D"center" valign=3D"middle" style=3D"=
+background: #FE794E; border: 0px none #11cb64; border-bottom-left-radius: 5=
+px; border-bottom-right-radius: 5px; border-collapse: separate; border-top-=
+left-radius: 5px; border-top-right-radius: 5px; color: #FFFFFF; display: bl=
+ock; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style=
+: normal; font-weight: bold; line-height: normal; padding: 10px 25px; text-=
+align: center; text-decoration: none" bgcolor=3D"#FE794E">=0A          <a h=
+ref=3D"http://email-diginbox.com/_act/link.php?mId=3DA939704955983474236751=
+46676513624&tId=3D109353627" style=3D"background: none; border: none; color=
+: #FFFFFF; display: block; font-family: Arial, Helvetica, sans-serif; font-=
+size: 18px; font-style: normal; font-weight: bold; line-height: normal; tex=
+t-align: center; text-decoration: none; word-wrap: break-word">WORKOUT WITH=
+ BARRY'S BOOTCAMP</a>=0A        </td>=0A      </tr>=0A    </tbody>=0A</tabl=
+e>=0A  </td>=0A</tr>=0A</tbody>=0A  </table>=0A</th></tr>=0A    </tbody>=0A=
+</table>=0A  </td>=0A</tr>=0A<tr data-block-row=3D"row" class=3D"block-row =
+block-row-row" id=3D"block-771067">=0A  <td class=3D"container-padding" val=
+ign=3D"top" align=3D"center" width=3D"550" style=3D"border: 0px none #00000=
+0; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-=
+collapse: separate; border-top-left-radius: 0px; border-top-right-radius: 0=
+px; padding: 0px">=0A    <table cellpadding=3D"0" cellspacing=3D"0" border=
+=3D"0" width=3D"100%" style=3D"margin: 0px auto; mso-table-lspace: 0px; mso=
+-table-rspace: 0px">=0A      <tbody>=0A<tr><th valign=3D"top" data-block-co=
+lumn=3D"column" class=3D"block-column block-column-column" id=3D"block-7292=
+15" width=3D"514" style=3D"border: 0px none #000000; border-bottom-left-rad=
+ius: 0px; border-bottom-right-radius: 0px; border-top-left-radius: 0px; bor=
+der-top-right-radius: 0px; font-weight: normal; padding: 18px; vertical-ali=
+gn: top">=0A  <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" width=
+=3D"100%" align=3D"center" style=3D"margin: 0px auto; mso-table-lspace: 0px=
+; mso-table-rspace: 0px">=0A    <tbody><tr data-block-content=3D"text" clas=
+s=3D"block-content block-content-text" id=3D"block-279100">=0A  <td valign=
+=3D"top" style=3D"border: 0px none #000000; border-bottom-left-radius: 0px;=
+ border-bottom-right-radius: 0px; border-collapse: separate; border-top-lef=
+t-radius: 0px; border-top-right-radius: 0px; color: #ffffff; font-family: A=
+rial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weig=
+ht: normal; line-height: 150%; padding: 0px 0px 10px; text-align: center; t=
+ext-decoration: none" align=3D"center">=0A<p style=3D"color: #ffffff; font-=
+family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; =
+font-weight: normal; line-height: 150%; margin: 0px; padding: 0px; text-ali=
+gn: center; text-decoration: none" align=3D"center">As always, take care of=
+ yourselves and of each other!</p>=0A<p style=3D"color: #ffffff; font-famil=
+y: Arial, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-=
+weight: normal; line-height: 150%; margin: 0px; padding: 0px; text-align: c=
+enter; text-decoration: none" align=3D"center"><br></p>=0A<p style=3D"color=
+: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font=
+-style: normal; font-weight: normal; line-height: 150%; margin: 0px; paddin=
+g: 0px; text-align: center; text-decoration: none" align=3D"center">Dig-In<=
+/p>=0A</td>=0A</tr></tbody>=0A  </table>=0A</th></tr>=0A    </tbody>=0A</ta=
+ble>=0A  </td>=0A</tr>=0A</tbody>=0A            </table>=0A          </td>=
+=0A        </tr>=0A      </tbody>=0A    </table>=0A  </td>=0A</tr>=0A<tr da=
+ta-block-panel=3D"clear" class=3D"block-panel block-panel-clear" id=3D"bloc=
+k-350585">=0A  <td style=3D"border-collapse: separate; padding: 0px">=0A   =
+ <table cellpadding=3D"0" cellspacing=3D"0" border=3D"0" align=3D"center" c=
+lass=3D"container" width=3D"550" style=3D"margin: 0px auto; mso-table-lspac=
+e: 0px; mso-table-rspace: 0px; width: 600px">=0A      <tbody>=0A        <tr=
+>=0A          <td style=3D"border: 0px none #000000; border-collapse: separ=
+ate; padding: 0px 25px 25px">=0A            <table cellpadding=3D"0" cellsp=
+acing=3D"0" border=3D"0" align=3D"center" width=3D"100%" style=3D"margin: 0=
+px auto; mso-table-lspace: 0px; mso-table-rspace: 0px">=0A              <tb=
+ody data-block-body=3D"">=0A=0A              <tr data-block-row=3D"row" cla=
+ss=3D"block-row block-row-row" id=3D"block-360296">=0A  <td class=3D"contai=
+ner-padding" valign=3D"top" align=3D"center" width=3D"550" style=3D"border:=
+ 0px none #000000; border-bottom-left-radius: 0px; border-bottom-right-radi=
+us: 0px; border-collapse: separate; border-top-left-radius: 0px; border-top=
+-right-radius: 0px; padding: 0px">=0A    <table cellpadding=3D"0" cellspaci=
+ng=3D"0" border=3D"0" width=3D"100%" style=3D"margin: 0px auto; mso-table-l=
+space: 0px; mso-table-rspace: 0px">=0A      <tbody>=0A<tr><th valign=3D"top=
+" data-block-column=3D"column" class=3D"block-column block-column-column" w=
+idth=3D"550" id=3D"block-742467" style=3D"border: 0px none #000000; border-=
+bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-top-left-r=
+adius: 0px; border-top-right-radius: 0px; font-weight: normal; padding: 0px=
+; vertical-align: top">=0A  <table cellpadding=3D"0" cellspacing=3D"0" bord=
+er=3D"0" width=3D"100%" align=3D"center" style=3D"margin: 0px auto; mso-tab=
+le-lspace: 0px; mso-table-rspace: 0px">=0A    <tbody>=0A<tr data-block-cont=
+ent=3D"divider" class=3D"block-content block-content-divider" id=3D"block-2=
+97841">=0A  <td valign=3D"top" style=3D"border: 0px none #000000; border-bo=
+ttom-left-radius: 0px; border-bottom-right-radius: 0px; border-collapse: se=
+parate; border-top-left-radius: 0px; border-top-right-radius: 0px; padding:=
+ 0px 0px 10px">=0A    <table width=3D"100%" cellpadding=3D"0" cellspacing=
+=3D"0" border=3D"0" align=3D"center" style=3D"margin: 0px auto; mso-table-l=
+space: 0px; mso-table-rspace: 0px">=0A      <tbody>=0A<tr>=0A        <td cl=
+ass=3D"divider-content" style=3D"border-bottom-color: #FE794E; border-botto=
+m-style: solid; border-bottom-width: 3px; border-collapse: separate; font-s=
+ize: 1px; height: 1px; line-height: 1; padding: 10px 0px 0px">=C2=A0</td>=
+=0A      </tr>=0A      <tr>=0A        <td class=3D"divider-helper" style=3D=
+"border-collapse: separate; font-size: 1px; line-height: 1; padding: 0px 0p=
+x 10px">=C2=A0</td>=0A      </tr>=0A    </tbody>=0A</table>=0A  </td>=0A</t=
+r>=0A<tr data-block-content=3D"text" class=3D"block-content block-content-t=
+ext" id=3D"block-431864">=0A  <td valign=3D"top" style=3D"border: 0px none =
+#000000; border-bottom-left-radius: 0px; border-bottom-right-radius: 0px; b=
+order-collapse: separate; border-top-left-radius: 0px; border-top-right-rad=
+ius: 0px; color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-s=
+ize: 18px; font-style: normal; font-weight: normal; line-height: 150%; padd=
+ing: 0px 0px 10px; text-align: center; text-decoration: none" align=3D"cent=
+er"><h1 style=3D"color: #FE794E; font-family: Arial, Helvetica, sans-serif;=
+ font-size: 36px; font-style: normal; font-weight: bold; line-height: norma=
+l; margin: 0px 0px 10px; text-decoration: none"><span style=3D"font-size: 2=
+4px">Download the Dig-in App here:</span></h1></td>=0A</tr>=0A<tr data-bloc=
+k-content=3D"text" class=3D"block-content block-content-text" id=3D"block-7=
+14206">=0A  <td valign=3D"top" style=3D"border: 0px none #000000; border-bo=
+ttom-left-radius: 0px; border-bottom-right-radius: 0px; border-collapse: se=
+parate; border-top-left-radius: 0px; border-top-right-radius: 0px; color: #=
+ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-st=
+yle: normal; font-weight: normal; line-height: 150%; padding: 10px 20px 0px=
+; text-align: center; text-decoration: none" align=3D"center"><p style=3D"c=
+olor: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; =
+font-style: normal; font-weight: normal; line-height: 150%; margin: 0px; pa=
+dding: 0px; text-align: center; text-decoration: none" align=3D"center"><a =
+data-cke-saved-href=3D"https://apps.apple.com/us/app/dig-in-student-rewards=
+/id1476266192" href=3D"http://email-diginbox.com/_act/link.php?mId=3DA93970=
+495598347423675146676513624&tId=3D109353630" target=3D"_blank" style=3D"bac=
+kground: none; border: none; color: #FE794E; font-style: normal; font-weigh=
+t: normal; text-decoration: none; word-wrap: break-word"><img data-cke-save=
+d-src=3D"https://cdn.uploadlibrary.com/DigInBox/ios%20download.png" src=3D"=
+https://cdn.uploadlibrary.com/DigInBox/ios%20download.png" alt=3D"App Store=
+" style=3D"border: 0px solid; height: 62px; max-width: 175px; outline: none=
+; text-decoration: none; width: 200px">=C2=A0 =C2=A0<img data-cke-saved-src=
+=3D"https://cdn.uploadlibrary.com/DigInBox/android%20download.png" src=3D"h=
+ttps://cdn.uploadlibrary.com/DigInBox/android%20download.png" alt=3D"Play S=
+tore" style=3D"border: 0px solid; height: 62px; max-width: 175px; outline: =
+none; text-decoration: none; width: 200px"></a></p></td>=0A</tr>=0A<tr data=
+-block-content=3D"text" class=3D"block-content block-content-text" id=3D"bl=
+ock-372327">=0A  <td valign=3D"top" style=3D"border: 0px none #000000; bord=
+er-bottom-left-radius: 0px; border-bottom-right-radius: 0px; border-collaps=
+e: separate; border-top-left-radius: 0px; border-top-right-radius: 0px; col=
+or: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; fo=
+nt-style: normal; font-weight: normal; line-height: 150%; padding: 0px; tex=
+t-align: center; text-decoration: none" align=3D"center">=0A<p style=3D"col=
+or: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 18px; fo=
+nt-style: normal; font-weight: normal; line-height: 150%; margin: 0px; padd=
+ing: 0px; text-align: center; text-decoration: none" align=3D"center"><span=
+ style=3D"font-size: 12px"><span style=3D"color: #FE794E"><a data-cke-saved=
+-href=3D"mailto:info@diginbox.com" href=3D"mailto:info@diginbox.com" style=
+=3D"background: none; border: none; color: #FE794E; font-style: normal; fon=
+t-weight: normal; text-decoration: none; word-wrap: break-word"><b>Contact<=
+/b></a><b>=C2=A0</b></span><span style=3D"color: #FE794E"><b> |=C2=A0=C2=A0=
+</b></span><span style=3D"color: #FE794E"><a data-cke-saved-href=3D"https:/=
+/www.diginbox.com/privacy" href=3D"http://email-diginbox.com/_act/link.php?=
+mId=3DA93970495598347423675146676513624&tId=3D109353633" style=3D"backgroun=
+d: none; border: none; color: #FE794E; font-style: normal; font-weight: nor=
+mal; text-decoration: none; word-wrap: break-word"><b>Terms &amp; Condition=
+s</b></a><b>=C2=A0</b></span><span style=3D"color: #FE794E"><b> |=C2=A0=C2=
+=A0</b></span><a data-cke-saved-href=3D"http://email-diginbox.com/_act/opto=
+ut.php?A93970495598347423675146676513624" href=3D"http://email-diginbox.com=
+/_act/optout.php?A93970495598347423675146676513624" style=3D"background: no=
+ne; border: none; color: #FE794E; font-style: normal; font-weight: normal; =
+text-decoration: none; word-wrap: break-word"><span style=3D"color: #FE794E=
+"><b>Unsubscribe</b></span></a></span></p>=0A<p style=3D"color: #ffffff; fo=
+nt-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: norma=
+l; font-weight: normal; line-height: 150%; margin: 0px; padding: 0px; text-=
+align: center; text-decoration: none" align=3D"center"><br></p>=0A<p style=
+=3D"color: #ffffff; font-family: Arial, Helvetica, sans-serif; font-size: 1=
+8px; font-style: normal; font-weight: normal; line-height: 150%; margin: 0p=
+x; padding: 0px; text-align: center; text-decoration: none" align=3D"center=
+"><span style=3D"font-size: 12px">Get in touch anytime at info@diginbox.com=
+ just reply to this email!</span><br><br></p>=0A<p style=3D"color: #ffffff;=
+ font-family: Arial, Helvetica, sans-serif; font-size: 18px; font-style: no=
+rmal; font-weight: normal; line-height: 150%; margin: 0px; padding: 0px; te=
+xt-align: center; text-decoration: none" align=3D"center"><span style=3D"fo=
+nt-size: 12px">You're receiving this email because you entered a Dig-In giv=
+eaway.<br>If you'd rather not hear from us again, simply click <a data-cke-=
+saved-href=3D"http://email-diginbox.com/_act/optout.php?A939704955983474236=
+75146676513624" href=3D"http://email-diginbox.com/_act/optout.php?A93970495=
+598347423675146676513624" style=3D"background: none; border: none; color: #=
+FE794E; font-style: normal; font-weight: normal; text-decoration: none; wor=
+d-wrap: break-word"><b>here</b></a> or use the unsubscribe link above.</spa=
+n></p>=0A<p style=3D"color: #ffffff; font-family: Arial, Helvetica, sans-se=
+rif; font-size: 18px; font-style: normal; font-weight: normal; line-height:=
+ 150%; margin: 0px; padding: 0px; text-align: center; text-decoration: none=
+" align=3D"center"><br></p>=0A<p style=3D"color: #ffffff; font-family: Aria=
+l, Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight:=
+ normal; line-height: 150%; margin: 0px; padding: 0px; text-align: center; =
+text-decoration: none" align=3D"center"><a data-cke-saved-href=3D"https://w=
+ww.diginbox.com/" href=3D"http://email-diginbox.com/_act/link.php?mId=3DA93=
+970495598347423675146676513624&tId=3D109353636" target=3D"_blank" style=3D"=
+background: none; border: none; color: #FE794E; font-style: normal; font-we=
+ight: normal; text-decoration: none; word-wrap: break-word"><img data-cke-s=
+aved-src=3D"https://cdn.uploadlibrary.com/DigInBox/logo-digin-email41-99000=
+0014501453c.png" src=3D"https://cdn.uploadlibrary.com/DigInBox/logo-digin-e=
+mail41-990000014501453c.png" alt=3D"DigInBox Logo" style=3D"border: 0px sol=
+id; height: 75px; outline: none; padding-bottom: 10px; text-decoration: non=
+e; width: 75px"></a></p>=0A<p style=3D"color: #ffffff; font-family: Arial, =
+Helvetica, sans-serif; font-size: 18px; font-style: normal; font-weight: no=
+rmal; line-height: 150%; margin: 0px; padding: 0px; text-align: center; tex=
+t-decoration: none" align=3D"center"><span style=3D"font-size: 12px">=C2=A9=
+ Dig-In 2019<br>Dig-In, 37 Cremer Street, London, E2 8HD<br><b>www.diginbox=
+.com</b></span></p>=0A</td>=0A</tr>=0A</tbody>=0A  </table>=0A</th></tr>=
+=0A    </tbody>=0A</table>=0A  </td>=0A</tr>=0A</tbody>=0A            </tab=
+le>=0A          </td>=0A        </tr>=0A      </tbody>=0A    </table>=0A  <=
+/td>=0A</tr>=0A</tbody> </table>=0A=0A=0A=0A<center>=0A=0A<br><br>=0A<img s=
+rc=3D"http://response.pure360.com/_act/tracking.php?type=3Demail&id=3DA9397=
+0495598347423675146676513624" border=3D"0" height=3D"1" width=3D"1" style=
+=3D"border: none; outline: none; text-decoration: none">=0A<br>=0A<div clas=
+s=3D"mailid" align=3D"right" style=3D"color: #1A1A1A; font-size: 1px; line-=
+height: 1px; padding: 0">=0A{~A93970495598347423675146676513624~}=0A</div>=
+=0A</center>=0A</body>=0A</html>=0A
+
+--alternative_42634d2fbccfeee4443d8b5334f8ae9a--
